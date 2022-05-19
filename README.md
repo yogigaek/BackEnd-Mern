@@ -1,48 +1,44 @@
-crud menggunakan Express x javaScript
+CRUDS menggunakan Express x javaScript
 
-Ini adalah repository contoh sederhana pembuatan CRUD dengan menggunakan bahasa pemrograman JavaScript dengan bantuan database SQL yaitu MySQL.
+Ini adalah repository contoh sederhana pembuatan CRUD dengan menggunakan bahasa pemrograman JavaScript dengan bantuan database MONGODB.
 
 Panduan Penggunaan
 Clone atau download repository ini. Jika kamu ingin meng-download kamu bisa klik tombol kode warna hijau kemudian klik download zip atau jika ingin meng-clone bisa jalankan perintah ini.
-git clone https://github.com/yogigaek/backend-express-mysql.git
-Buka phpmyadmin, buat database baru dengan nama eduwork-cruds untuk mysql dan eduwork-cruds-v2 untuk squelize.
+git clone https://github.com/yogigaek/MERN/tree/backend
+Buka CommandPromp / terminal lainnya, buat databases baru dengan nama eduwork-native untuk mongoDb dan mongoose akan terbuat secara otomatis dengan source code berikut.
 
 
-Express Mysql API
+Express MongoDB API
 
-URL : "/api/v1/product",
+URL : "/api/v3/product",
 
 Method: "GET",
 
-Results: https://prnt.sc/HicCcV0PSkDO
 
 =========================================
 
-URL :"/api/v1/product/1",
+URL :"/api/v3/product/:id",
 
 Method:"GET",
 
-Results: https://prnt.sc/A7FJ-Sh63yBy
 
 =========================================
 
 
-Express Mysql2 Sequelize API
+Express Mongoose API
 
 
-URL : "/api/v2/product",
+URL : "/api/v4/product",
 
 Method: "GET",
 
-Results: https://prnt.sc/inRSjW73_Ute
 
 =========================================
 
-URL : "/api/v2/product/3",
+URL : "/api/v4/product/:id",
 
 Method: "GET",
 
-Results: https://prnt.sc/m5QbA8oKNDIP
 
 
 Thank You!
