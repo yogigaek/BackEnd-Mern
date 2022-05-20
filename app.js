@@ -2,15 +2,15 @@ require(`./config/mongoose`);
 const express = require(`express`);
 const app = express();
 const path = require(`path`);
-const getCors = require(`cors`);
-const cors = getCors();
+const cors = require(`cors`);
 const logger = require(`morgan`);
 const productRouterV3 = require(`./productV3/routes`);
 const productRouterV4 = require(`./productV4/routes`); 
+const BodyParser = require(`body-parser`);
 
-app.use(express.json())
-app.use(express.urlencoded({extended: false}))
-app.use(cors);
+app.use(BodyParser.json()); // for parsing application/json
+app.use(BodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use(`/api/v3`, productRouterV3);
 app.use(`/api/v4`, productRouterV4);
 app.use(logger(`dev`));
