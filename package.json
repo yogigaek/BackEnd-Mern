@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Erronpmr: no test specified\" && exit 1",
-    "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_product=false npm install --prefix frontend-mern"
+    "start": "./frontend-mern/app.js"
   },
   "author": "Muhammad Yogi",
   "license": "ISC",
